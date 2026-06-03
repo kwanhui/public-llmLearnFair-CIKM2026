@@ -1,0 +1,7 @@
+scenario_id: liquidity-ratio
+title: "Liquidity ratio drop"
+domain: finance
+turns:
+  - learner: "Our company's current ratio dropped from 1.8 to 1.1 over the past year. What does that mean for our liquidity?"
+  - learner: "I think a lower ratio is worse, but I'm not sure why 1.1 specifically is a concern."
+  - learner: "OK, so a current ratio of 1.1 means we hold only $1.10 of current assets for every $1 of current liabilities, so the cushion for meeting short-term obligations has shrunk a lot. Is that the right read?"

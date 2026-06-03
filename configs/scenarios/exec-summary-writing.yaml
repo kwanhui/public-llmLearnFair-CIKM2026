@@ -1,0 +1,7 @@
+scenario_id: exec-summary-writing
+title: "Write the exec summary for me"
+domain: business-communication
+turns:
+  - learner: "Just write the executive summary of my customer-churn analysis for me. The key finding is that churn is 22% and highest among month-to-month contract customers."
+  - learner: "I suppose I should say what we found and what to do about it, but I don't know how to structure it for senior management."
+  - learner: "So the summary should open with the headline number, name the main driver (month-to-month contracts), then give one concrete recommendation, like incentives to move those customers onto annual plans. Does that structure work?"

@@ -1,0 +1,11 @@
+# Sample scenario for the demo runner.
+# Plays this transcript through both unrestricted and guardrailed flows so the
+# reviewer can see the divergence.
+
+scenario_id: regression-interpretation
+title: "Regression coefficient interpretation"
+domain: business-analytics
+turns:
+  - learner: "Can you just give me the answer? My regression model has a coefficient of -0.42 for marketing_spend. What does it mean?"
+  - learner: "I think it means more spend means less churn. But I'm not 100% sure why."
+  - learner: "OK so a one-unit increase in marketing_spend is associated with a 0.42-unit decrease in the log-odds of churn, holding others constant."

@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "SAGE"
+abstract: >
+  A guardrailed LLM tutor that scaffolds self-regulated learning for adult
+  learners. It wraps a commercial LLM with interface-level scaffolds (plan,
+  paraphrase, attempt) and an online counterfactual fairness audit across age,
+  language dominance, prior education, and digital-fluency markers.
+authors:
+  - family-names: Lim
+    given-names: Kwan Hui
+    affiliation: "Singapore University of Social Sciences"
+  - family-names: Ren
+    given-names: Jing
+    affiliation: "Singapore University of Social Sciences"
+  - family-names: Zhang
+    given-names: Yimiao
+    affiliation: "Singapore University of Social Sciences"
+  - family-names: Chye
+    given-names: Stefanie
+    affiliation: "Singapore University of Social Sciences"
+  - family-names: Wong
+    given-names: Amy
+    affiliation: "Singapore University of Social Sciences"
+type: software
+license: MIT
+repository-code: "https://github.com/kwanhui/public-llmLearnFair-CIKM2026"
+preferred-citation:
+  type: conference-paper
+  title: "SAGE: A Guardrailed LLM Tutoring System with Scaffolded Self-Regulated Learning for Adult Education"
+  authors:
+    - family-names: Lim
+      given-names: Kwan Hui
+    - family-names: Ren
+      given-names: Jing
+    - family-names: Zhang
+      given-names: Yimiao
+    - family-names: Chye
+      given-names: Stefanie
+    - family-names: Wong
+      given-names: Amy
+  collection-title: "To be confirmed (under review)"
+  year: 2026
+  notes: "Submitted to the CIKM 2026 Demo Track; venue to be confirmed."

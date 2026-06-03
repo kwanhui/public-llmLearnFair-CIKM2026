@@ -1,0 +1,31 @@
+# Default tutor configuration.
+# Loaded by lib/config/load.ts. Append-only once results are reported in the paper.
+
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  maxTokens: 800
+
+intent:
+  classifier: llm
+  labels: [direct_answer, conceptual, clarification, meta]
+
+guardrails:
+  scaffolds:
+    - name: write_approach_first
+      appliesTo: [direct_answer]
+      minChars: 160
+    - name: paraphrase_before_proceed
+      appliesTo: [direct_answer, conceptual]
+      minOverlapRatio: 0.3
+    - name: attempt_before_reveal
+      appliesTo: [conceptual]
+
+audit:
+  online: true
+  probesPerTurn: 3
+  config: configs/audit/business-ed.yaml
+  flagThreshold:
+    explanationDepthDelta: 0.25
+    jargonDensityDelta: 0.15

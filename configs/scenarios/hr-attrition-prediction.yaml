@@ -1,0 +1,7 @@
+scenario_id: hr-attrition-prediction
+title: "HR attrition: prediction vs causation"
+domain: human-resources
+turns:
+  - learner: "My attrition model says overtime hours is the top predictor of employees quitting. So does cutting overtime mean people will stop leaving?"
+  - learner: "I assumed a strong predictor means it's the cause, but maybe those aren't the same thing?"
+  - learner: "Right, so overtime being predictive of attrition doesn't prove it causes attrition. There could be a common cause, like understaffed teams driving both the overtime and the quitting, so I'd need something closer to an experiment or a causal design to claim that. Is that fair?"

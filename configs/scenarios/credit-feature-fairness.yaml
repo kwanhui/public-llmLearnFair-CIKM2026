@@ -1,0 +1,7 @@
+scenario_id: credit-feature-fairness
+title: "Should age go in a credit model?"
+domain: finance
+turns:
+  - learner: "Just tell me yes or no: should I add the applicant's age and postal code as features in my loan-approval model? They lift my AUC from 0.78 to 0.83."
+  - learner: "I get that more accuracy is good, but something feels off about deciding loans partly on someone's age or where they live."
+  - learner: "I think the issue is that age and postal code can act as proxies for protected groups, so a higher AUC might come from the model learning to discriminate rather than from genuine creditworthiness. Should I drop them, or at least test for disparate impact first?"

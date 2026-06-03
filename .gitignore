@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js
+.next/
+out/
+build/
+dist/
+next-env.d.ts.bak
+
+# Production
+/build
+
+# Vercel
+.vercel
+.turbo
+
+# Vitest / Playwright
+coverage/
+playwright-report/
+test-results/
+
+# Environment: block every variant except the safe-to-commit example.
+.env
+.env.*
+!.env.example
+*.key
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+

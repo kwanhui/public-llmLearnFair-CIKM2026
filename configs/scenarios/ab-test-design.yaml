@@ -1,0 +1,7 @@
+scenario_id: ab-test-design
+title: "Sample size for an AB test"
+domain: experimentation
+turns:
+  - learner: "Just give me the sample size for my checkout-button A/B test. Current conversion is 4%."
+  - learner: "I know I need a sample size, but I'm not sure what else I have to decide before I can compute it."
+  - learner: "I think I first need to choose the minimum effect I care about (say 4% to 4.5%), the significance level, and the power, and those together determine the sample size per variant. Is that the right order?"
