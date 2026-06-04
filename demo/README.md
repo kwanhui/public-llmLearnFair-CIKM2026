@@ -13,12 +13,14 @@ How to run, host, and walk through the system.
 
 ### Demo credentials
 
-- **Tutor login**: email `admin`, password `demo1234`.
+- **Tutor login**: email `admin`; set the password yourself with
+  `pnpm change-admin-password` (stored as a bcrypt `ADMIN_PASSWORD_HASH`). The
+  hosted-demo password is given in the companion paper, not in this repo.
 - **Students**: no login; they join through a one-time invite link the tutor
   generates from a cohort's Overview tab.
 
-> Shared demo credential, synthetic data only. Rotate it with
-> `pnpm change-admin-password` for your own deployment.
+> Synthetic data only. The single shared tutor account is a demo convenience;
+> set your own password with `pnpm change-admin-password` for any deployment.
 
 ## Walkthrough
 
@@ -42,7 +44,9 @@ The first run after the demo has been idle can be slow; send one throwaway turn
 
 ### 2. Tutor admin
 
-1. Go to `/admin/login` and sign in (`admin` / `demo1234`).
+1. Go to `/admin/login` and sign in as the tutor (email `admin`; the
+   hosted-demo password is in the companion paper, or set your own with
+   `pnpm change-admin-password`).
 2. **Create a cohort**, then **Generate invite link** on its Overview tab.
 3. Open the **Analytics** tab: turn volume, active students, scaffold pass rate,
    audit flag rate, per-attribute charts, the students table, and CSV export.
